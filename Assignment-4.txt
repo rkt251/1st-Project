@@ -1,0 +1,232 @@
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ git config user.email "rkt251@nyu.edu"
+fatal: not in a git directory
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ git config --global user.email "rkt251@nyu.edu"
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ git config -- user.name "Rushi Thakar"
+fatal: not in a git directory
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ git config --global user.name "Rushi Thakar"
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ mkdir rushi
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ cd rushi
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi
+$ git init assignment
+Initialized empty Git repository in C:/Users/rushi/rushi/assignment/.git/
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi
+$ cd assignment
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment (master)
+$ mkdir rkt251
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment (master)
+$ cd rkt251
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ cd ..
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment (master)
+$ cd ..
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi
+$ cd ..
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ cd desktop
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/desktop
+$ ls
+'Capstone Project'/  'Programing for Python'/          Spotify.lnk*
+ desktop.ini          Rushi_Resume.pdf
+ file2play.txt       'Rushi_Thakar_Cover Letter.pdf'
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/desktop
+$ cp file2play.txt ~/rushi/assignment/rkt251
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/desktop
+$ git commit
+fatal: Not a git repository (or any of the parent directories): .git
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/desktop
+$ cd rkt251
+bash: cd: rkt251: No such file or directory
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/desktop
+$ cd rushi
+bash: cd: rushi: No such file or directory
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/desktop
+$ cd ..
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~
+$ cd rushi
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi
+$ cd assignment
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment (master)
+$ cd rkt251
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ ls
+file2play.txt
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+        ./
+
+nothing added to commit but untracked files present
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git add ..
+warning: LF will be replaced by CRLF in rkt251/file2play.txt.
+The file will have its original line endings in your working directory.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git commit
+      1 [sig] bash 3940! sigpacket::process: Suppressing signal 18 to win32 proc                                                                                                                                  ess (pid 15544)
+ 289402 [sig] bash 3940! sigpacket::process: Suppressing signal 18 to win32 proc                                                                                                                                  ess (pid 15544)
+[master (root-commit) 418bbeb] 1st commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rkt251/file2play.txt
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ vi file2play.txt
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git add ..
+warning: LF will be replaced by CRLF in rkt251/file2play.txt.
+The file will have its original line endings in your working directory.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git commit
+[master fcdfe6e] 2nd commit
+ 1 file changed, 1 insertion(+)
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git branch
+* master
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git branch testing
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git checkout
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git branch
+* master
+  testing
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git branch testing
+fatal: A branch named 'testing' already exists.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git checkout testing
+Switched to branch 'testing'
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ vi file2play.txt
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git add ..
+warning: LF will be replaced by CRLF in rkt251/file2play.txt.
+The file will have its original line endings in your working directory.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git commit
+[testing b1780a1] 3rd commit
+ 1 file changed, 1 insertion(+)
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git merge testing
+Already up-to-date.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ vi file2play.txt
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git add ..
+warning: LF will be replaced by CRLF in rkt251/file2play.txt.
+The file will have its original line endings in your working directory.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git commit
+[testing 18a9ca5] 4th commit
+ 1 file changed, 1 insertion(+)
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git merge testing
+Already up-to-date.
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git branch
+  master
+* testing
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git checkout master
+Switched to branch 'master'
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git log
+commit fcdfe6e62c327703136fa97230ace18ebe6703a7 (HEAD -> master)
+Author: Rushi Thakar <rkt251@nyu.edu>
+Date:   Wed Oct 4 19:19:17 2017 -0400
+
+    2nd commit
+
+commit 418bbeba68e03bbe7017cc662ea1a909d570f0bd
+Author: Rushi Thakar <rkt251@nyu.edu>
+Date:   Wed Oct 4 19:15:53 2017 -0400
+
+    1st commit
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (master)
+$ git checkout testing
+Switched to branch 'testing'
+
+rushi@LAPTOP-QN14F6CP MINGW64 ~/rushi/assignment/rkt251 (testing)
+$ git log
+commit 18a9ca5dda28d7738e9ba6e38999add6417697b4 (HEAD -> testing)
+Author: Rushi Thakar <rkt251@nyu.edu>
+Date:   Wed Oct 4 19:25:42 2017 -0400
+
+    4th commit
+
+commit b1780a1bac42b0a8c559be35d13cdb715e81bffc
+Author: Rushi Thakar <rkt251@nyu.edu>
+Date:   Wed Oct 4 19:23:37 2017 -0400
+
+    3rd commit
+
+commit fcdfe6e62c327703136fa97230ace18ebe6703a7 (master)
+Author: Rushi Thakar <rkt251@nyu.edu>
+Date:   Wed Oct 4 19:19:17 2017 -0400
+
+    2nd commit
+
+commit 418bbeba68e03bbe7017cc662ea1a909d570f0bd
+Author: Rushi Thakar <rkt251@nyu.edu>
+Date:   Wed Oct 4 19:15:53 2017 -0400
+
+    1st commit
